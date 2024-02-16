@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://static.form-data.com/js/form-data-tools.v1.min.js"></script>
 </head>
 <body>
     <!-- Preloader -->
@@ -85,8 +86,6 @@
                                         <p>Daniela fringilla dui at elit finibus viverra thenec a lacus seda themo the miss druane semper non the fermen.</p>
                                         <div class="social">
                                             <div class="full-width">
-                                                <a href="#0" class="icon"> <i class="ti-facebook"></i> </a>
-                                                <a href="#0" class="icon"> <i class="ti-twitter"></i> </a>
                                                 <a href="#0" class="icon"> <i class="ti-instagram"></i> </a>
                                             </div>
                                         </div>
@@ -103,8 +102,6 @@
                                         <p>Guilherme fringilla dui at elit finibus viverra thenec a lacus seda themo the miss druane semper non the fermen.</p>
                                         <div class="social">
                                             <div class="full-width">
-                                                <a href="#0" class="icon"> <i class="ti-facebook"></i> </a>
-                                                <a href="#0" class="icon"> <i class="ti-twitter"></i> </a>
                                                 <a href="#0" class="icon"> <i class="ti-instagram"></i> </a>
                                             </div>
                                         </div>
@@ -399,15 +396,16 @@
             <div id="rsvp" class="section-padding bg-img bg-fixed" data-background="images/banner-2.jpg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 bg-white p-40"> <span class="oliven-title-meta text-center">Will you attend?</span>
+                        <div class="col-md-6 offset-md-3 bg-white p-40"> <span class="oliven-title-meta text-center">Você vai comparecer?</span>
                             <h2 class="oliven-title text-center">R.S.V.P</h2>
                             <br>
-                            <form class="contact__form" method="post" action="mail.php">
+                            <form class="contact__form" method="post" action="https://api.form-data.com/f/60jn8ebc79q0m3pwnbauxh">
+                                <input type="hidden" name="_fd" value="0" class="form-data-marker" />
                             <!-- form message -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                                        Your message was sent successfully.
+                                        Mensagem enviada com sucesso.
                                     </div>
                                 </div>
                             </div>
@@ -415,7 +413,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input name="name" type="text" class="form-control" placeholder="Name" required> </div>
+                                        <input name="name" type="text" class="form-control" placeholder="Nome e Sobrenome" required> </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -423,20 +421,24 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input name="guests" type="text" class="form-control" placeholder="Guests" required> </div>
+                                        <input name="guests" type="text" class="form-control" placeholder="Acompanhante (nome, opcional)" required> </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input name="submit" type="submit" class="btn buttono" value="SEND"> 
+                                        <input name="submit" type="submit" class="btn buttono" value="CONFIRMAR PRESENÇA" id="rsvp-btn" data-loading-text="Doing a thing..."> 
                                     </div>
                                 </div> 
                             </div>
+                            <div class="form-data-powered-by" data-formdata-lang="en" data-formdata-sitename="Super Store" data-formdata-theme="light"></div>
                             </form>
+                            <script>
+                              _fd.scan()
+                            </script>
                         </div>
                     </div>
                 </div>
