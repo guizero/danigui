@@ -315,6 +315,15 @@
   });
 })();
 
+const copyContent = async (content) => {
+  try {
+    await navigator.clipboard.writeText(content);
+    alert('Text copied');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+}
+
 // Countdown wedding
 (function () {
   const second = 1000,
