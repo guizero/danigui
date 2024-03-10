@@ -2119,10 +2119,11 @@ body.offcanvason .oliven-nav-toggle {
 .blog-post-comment-wrap {
     display: flex;
     margin-bottom: 60px;
+    flex-direction: column;
 }
 .blog-user-comment {
-    margin-right: 30px;
     flex: 0 0 auto;
+    align-self: center;
 }
 .blog-user-comment img {
     border-radius: 10%;
