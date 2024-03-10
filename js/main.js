@@ -318,7 +318,7 @@
 const copyContent = async (content) => {
   try {
     await navigator.clipboard.writeText(content);
-    alert('Text copied');
+    alert('Copiado!');
   } catch (err) {
     console.error('Failed to copy: ', err);
   }
